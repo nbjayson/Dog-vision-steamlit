@@ -80,7 +80,7 @@ def load_model(model_path):
   return model
 
 def predict_custom(image):
-	model = load_model(model_path='C:\\Users\\abc\\Downloads\\20210521-120850-Full-model-Adam.h5')
+	model = load_model(model_path='20210521-120850-Full-model-Adam.h5')
 	custom_data = process_image(image)
 	custom_preds = model.predict(custom_data)
 	conf = f'{np.max(custom_preds[0])* 100:.2f}%'
