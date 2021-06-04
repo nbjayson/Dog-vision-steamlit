@@ -4,7 +4,7 @@ from PIL import Image
 
 st.title('Dog Vision')
 
-uploaded_file = st.file_uploader("Choose a dog photo...", type=["jpg", "jpeg"])
+uploaded_file = st.file_uploader("Choose a dog photo...", type=["jpg", "jpeg", "png"])
 def load_image(image_file):
 	img = Image.open(image_file)
 	return img
