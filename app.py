@@ -13,4 +13,4 @@ if uploaded_file is not None:
 	uploaded_file = load_image(uploaded_file) 
 	image, label, confidence = predict_custom(uploaded_file)
 
-	st.image(image=image, caption=f'{label}, {confidence}')
+	st.image(image=image, caption=f'Breed: {label}, Confidence: {confidence}')
